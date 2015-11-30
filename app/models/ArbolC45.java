@@ -97,7 +97,7 @@ public class ArbolC45 {
 			double pred = cls.classifyInstance(test.instance(i));
 			double[] dist = cls.distributionForInstance(test.instance(i));
 			test.classAttribute().value((int) pred);
-			if(test.classAttribute().value((int) pred)=="1"){
+			if(test.classAttribute().value((int) pred).equals("1")){
 				return "El articulo va a ser popular";
 			}else{
 				return "El articulo no va a ser popular";
