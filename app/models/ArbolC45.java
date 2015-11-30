@@ -26,7 +26,7 @@ public class ArbolC45 {
 
 
 		try{
-			File f=new File("pred.txt");
+			File f=new File("/tmp/pred.txt");
 			FileWriter fw = new FileWriter(f.getAbsolutePath());
 
 			BufferedWriter bw = new BufferedWriter(fw);
@@ -76,8 +76,8 @@ public class ArbolC45 {
 	public String darPrediccion(){
 		try{
 
-			BufferedReader datafile = readDataFile("trc.txt");
-			BufferedReader datafile2 = readDataFile("pred.txt");
+			BufferedReader datafile = readDataFile("/public/trc.txt");
+			BufferedReader datafile2 = readDataFile("/tmp/pred.txt");
 
 			Instances train = new Instances(datafile);
 			train.setClassIndex(train.numAttributes() - 1);
