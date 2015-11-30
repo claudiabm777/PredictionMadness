@@ -81,7 +81,7 @@ public class RandomF {
 	public String darPrediccion(){
 		try{
 
-			BufferedReader datafile = readDataFile("/public/trc.txt");
+			BufferedReader datafile = readDataFile("trc.txt");
 			BufferedReader datafile2 = readDataFile("/tmp/pred.txt");
 
 			Instances train = new Instances(datafile);
