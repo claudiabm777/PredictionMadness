@@ -78,7 +78,7 @@ public class TablaDe {
 	public String darPrediccion(){
 		try{
 
-			BufferedReader datafile = readDataFile("trr.txt");
+			BufferedReader datafile = readDataFile("tab.txt");
 			BufferedReader datafile2 = readDataFile("/tmp/pred.txt");
 
 			Instances train = new Instances(datafile);
