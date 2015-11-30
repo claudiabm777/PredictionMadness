@@ -1,0 +1,154 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PredictionMadness</title>
+	<link href="@routes.Assets.versioned("css/style.css")" rel="stylesheet" type="text/css" media="all" />
+	<!--fonts-->
+		<link href='//fonts.googleapis.com/css?family=Sintony:700,400' rel='stylesheet' type='text/css'>
+		<link href='//fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+	<!--//fonts-->
+		<link href="@routes.Assets.versioned("css/bootstrap.css")" rel="stylesheet" type="text/css" media="all" />
+	<!-- for-mobile-apps -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Infusion Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+		Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+	<!-- //for-mobile-apps -->
+	<!-- js -->
+		<script type="text/javascript" src="@routes.Assets.versioned("js/jquery.min.js")"></script>
+	<!-- js -->
+	<!-- start-smooth-scrolling -->
+		<script type="text/javascript" src="@routes.Assets.versioned("js/move-top.js")"></script>
+		<script type="text/javascript" src="@routes.Assets.versioned("js/easing.js")"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+	<!-- start-smooth-scrolling -->
+
+</head>
+<body>
+<!-- header -->
+<div class="header">
+	<div class="header-left">
+		
+	</div>
+	<div class="header-right">
+		<span class="menu"><img src="@routes.Assets.versioned("images/menu.png")" alt=""/></span>
+				<ul class="nav1">
+                    <li><a class="active" href="@routes.Application.index()">PREDICTION MADNESS</a></li>
+                    <li><a href="@routes.Application.regresion()">REGRESIÓN</a></li>
+                    <li><a href="@routes.Application.clasifica()">CLASIFICACIÓN</a></li>
+				</ul>
+				<!-- script for menu -->
+					<script> 
+						$( "span.menu" ).click(function() {
+						$( "ul.nav1" ).slideToggle( 300, function() {
+						 // Animation complete.
+						});
+						});
+					</script>
+				<!-- //script for menu -->
+
+	</div>
+	<div class="clearfix"></div>
+</div>
+<!-- //header -->
+<!-- contact-page -->
+<div class="contact">
+	<div class="container">
+		<div class="contact-info">
+			<h3>FORMU<span>LARIO</span></h3>
+		</div>
+
+		<div class="contact-form">
+			<div class="contact-info">
+				<h3>TABLA DE <span> DECISIÓN</span></h3>
+			</div>
+            @helper.form(action = routes.Application.tabla, 'class -> "form-horizontal") {
+			<form>
+				<div class="contact-left">
+					<input name="a1" type="text" placeholder="num_self_hrefs" required>
+					<input name="a2" type="text" placeholder="kw_min_avg" required>
+					<input name="a3" type="text" placeholder="self_reference_min_shares" required>
+                    <input name="a4" type="text" placeholder="avg_negative_polarity" required>
+                    <input name="a5" type="text" placeholder="n_tokens_content" required>
+                    <input name="a6" type="text" placeholder="average_token_length" required>
+                    <input name="a7" type="text" placeholder="kw_min_min" required>
+                    <input name="a8" type="text" placeholder="kw_max_avg" required>
+                    <input name="a9" type="text" placeholder="self_reference_avg_sharess" required>
+                    <input name="a10" type="text" placeholder="global_sentiment_polarity" required>
+                    <input name="a11" type="text" placeholder="num_hrefs" required>
+                    <input name="a12" type="text" placeholder="num_keywords" required>
+                    <input name="a13" type="text" placeholder="kw_avg_avg" required>
+                    <input name="a14" type="text" placeholder="kw_min_max" required>
+                    <input name="a15" type="text" placeholder="global_rate_positive_words" required>
+                    <input name="a16" type="text" placeholder="Day of the week: L,M,I,J,V,S,D" required>
+				</div>
+                <div class="contact-right">
+                    <h2>Siga con atención las siguientes instrucciones:</h2>
+                    <h4> <span>*</span>   Llene todos los campos que se requieren para la predicción.</h4>
+                    <h4> <span>*</span>   La respuesta que obtendrá es el número de "shares" que va a tener el artículo.</h4>
+                    <h4> <span>*</span>   Por favor ingrese de manera correcta la información. Las casillas deben tener números. La única variable que
+                        lleva letras es la última, asegurese que la ingresa en el formato especificado (L,M,I,J,V,S,D).</h4>
+                </div>
+				<div class="clearfix"></div>
+				<input type="submit" value="PREDECIR!">
+			</form>
+            }
+		</div>
+	</div>
+</div>
+<!-- //contact-page -->
+<!-- footer -->
+<!-- footer -->
+<div class="footer">
+    <div class="container">
+        <div class="footer-grids">
+            <div class="col-md-2 footer-grid logobtm">
+                <a href="index.html">Prediction Madness</a>
+            </div>
+            <div class="col-md-5 footer-grid">
+                <p>Esta página fue desarrollada con el fin de mostrar de una manera diferente los resultados de algunas predicciones.
+                    Se quería ir más allá de las herramientas vistas en el curso, y usar otras librerías y lenguajes de programación para predecir</p>
+            </div>
+
+            <div class="clearfix"> </div>
+        </div>
+        <div class="copy-right">
+            <p>Un trabajo desarrollado por <a > Prediction Madness</a> </p>
+        </div>
+    </div>
+</div>
+
+<!-- //footer -->
+<!-- smooth scrolling -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+		/*
+			var defaults = {
+			containerID: 'toTop', // fading element id
+			containerHoverID: 'toTopHover', // fading element hover id
+			scrollSpeed: 1200,
+			easingType: 'linear' 
+			};
+		*/								
+		$().UItoTop({ easingType: 'easeOutQuart' });
+		});
+	</script>
+	<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+<!-- //smooth scrolling -->
+
+</body>
+</html>

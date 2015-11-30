@@ -1,0 +1,281 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PredictionMadness</title>
+	<link href="@routes.Assets.versioned("css/style.css")" rel="stylesheet" type="text/css" media="all" />
+	<!--fonts-->
+		<link href='//fonts.googleapis.com/css?family=Sintony:700,400' rel='stylesheet' type='text/css'>
+		<link href='//fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+	<!--//fonts-->
+		<link href="@routes.Assets.versioned("css/bootstrap.css")" rel="stylesheet" type="text/css" media="all" />
+	<!-- for-mobile-apps -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Infusion Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+		Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+	<!-- //for-mobile-apps -->
+	<!-- js -->
+		<script type="text/javascript" src="@routes.Assets.versioned("js/jquery.min.js")"></script>
+	<!-- js -->
+	<!-- start-smooth-scrolling -->
+		<script type="text/javascript" src="@routes.Assets.versioned("js/move-top.js")"></script>
+		<script type="text/javascript" src="@routes.Assets.versioned("js/easing.js")"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+	<!-- start-smooth-scrolling -->
+
+</head>
+<body>
+<!-- header -->
+<div class="header">
+	<div class="header-left">
+
+	</div>
+	<div class="header-right">
+		<span class="menu"><img src="@routes.Assets.versioned("images/menu.png")" alt=""/></span>
+				<ul class="nav1">
+					<li><a class="active" href="@routes.Application.index()">PREDICTION MADNESS</a></li>
+					<li><a href="@routes.Application.regresion()">REGRESIÓN</a></li>
+					<li><a href="@routes.Application.clasifica()">CLASIFICACIÓN</a></li>
+				</ul>
+				<!-- script for menu -->
+					<script> 
+						$( "span.menu" ).click(function() {
+						$( "ul.nav1" ).slideToggle( 300, function() {
+
+						});
+						});
+					</script>
+				<!-- //script for menu -->
+
+	</div>
+	<div class="clearfix"></div>
+</div>
+<!-- //header -->
+<!-- banner -->
+<div class="banner">
+	<div class="container">
+		<div class="banner-info text-center">
+			<h1>PREDICTION MADNESS</h1>
+			<p>Puedes hacer tus predicciones es este portal.
+			<span>Podrás saber si tu artículo será popular o no.</span></p>
+			<a href="#">¡ADELANTE!</a>
+			<div class="uparrow">
+				<img src="@routes.Assets.versioned("images/uparrow.png")" alt=""/>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- //banner -->
+<!-- banner-bottom -->
+<div class="banner-bottom">
+	<div class="container">
+		<!-- responsiveslides -->
+
+				<!-- responsiveslides -->
+		<div  id="top" class="callbacks_container">
+					<ul class="rslides" id="slider3">
+						<li>
+							<div class="bottom-grids">
+								<div class="bottom-grid">
+
+								</div>
+								<div class="bottom-grid">
+                                    <a href="@routes.Application.regresion()">
+									<img src="@routes.Assets.versioned("images/b1.png")" alt=""/></a>
+									<div class="bottom-info">
+										<h3>Predice a través de regresión</h3>
+										<p>Predice tus resultados a través de métodos de regresión. Te diremos que tantas veces se compartirá tu artículo! </p>
+									</div>
+								</div>
+								<div class="bottom-grid">
+                                    <a href="@routes.Application.clasifica()">
+									<img src="@routes.Assets.versioned("images/b2.jpg")" alt=""/></a>
+									<div class="bottom-info">
+										<h3>Predice a través de clasificación</h3>
+										<p>Podrás saber si tu artículo va a ser popular o no. Esto te puede ayudar a mejorar tu trabajo ¡Inténtalo! </p>
+									</div>
+								</div>
+								<div class="bottom-grid">
+
+								</div>
+								<div class="clearfix"></div>
+							</div>
+						</li>
+
+					</ul>
+		</div>
+	</div>
+</div>
+<!-- //banner-bottom -->
+
+<!-- article -->
+<div class="article">
+	<div class="container">
+		<h3>EQUIPO</h3>
+	</div>
+</div>
+<!-- //article -->
+<!-- portfolio -->
+
+<!-- laptop slider -->
+<div class="flex-slider">
+	<div class="container">
+		<ul id="flexiselDemo1">
+			<li>
+				<div class="laptop">
+					<img src="@routes.Assets.versioned("images/juli.jpg")" alt=""/>
+				</div>
+			</li>
+			<li>
+				<div class="laptop">
+					<img src="@routes.Assets.versioned("images/clau.jpg")" alt=""/>
+				</div>
+			</li>
+			<li>
+				<div class="laptop">
+					<img src="@routes.Assets.versioned("images/vale.jpg")" alt=""/>
+				</div>
+			</li>
+            <li>
+                <div class="laptop">
+                    <img src="@routes.Assets.versioned("images/dani.jpg")" alt=""/>
+                </div>
+            </li>
+		</ul>
+			<script type="text/javascript">
+							$(window).load(function() {
+								$("#flexiselDemo1").flexisel({
+									visibleItems: 1,
+									animationSpeed: 1000,
+									autoPlay: true,
+									autoPlaySpeed: 3000,
+									pauseOnHover: true,
+									enableResponsiveBreakpoints: true,
+									responsiveBreakpoints: {
+										portrait: {
+											changePoint:480,
+											visibleItems: 1
+										},
+										landscape: {
+											changePoint:640,
+											visibleItems: 1
+										},
+										tablet: {
+											changePoint:768,
+											visibleItems: 1
+										}
+									}
+								});
+
+							});
+					</script>
+					<script type="text/javascript" src="@routes.Assets.versioned("js/jquery.flexisel.js")"></script>
+	</div>
+</div>
+<!-- //laptop slider -->
+
+<!-- //portfolio -->
+<!-- slider -->
+<div class="second-slider">
+	<div class="container">
+		<!-- responsiveslides -->
+					<script src="@routes.Assets.versioned("js/responsiveslides.min.js")"></script>
+						<script>
+
+							$(function () {
+
+							$("#slider4").responsiveSlides({
+								auto: true,
+								pager: true,
+								nav: true,
+								speed: 500,
+								namespace: "callbacks",
+								before: function () {
+							$('.events').append("<li>before event fired.</li>");
+							},
+							after: function () {
+								$('.events').append("<li>after event fired.</li>");
+								}
+								});
+								});
+					</script>
+				<!-- responsiveslides -->
+		<div  id="top" class="callbacks_container">
+					<ul class="rslides" id="slider4">
+						<li>
+							<div class="sec-slid-info">
+								<img src="@routes.Assets.versioned("images/quotation.png")" alt=""/>
+								<h3>Predice si tu aplicación va a ser popular o no.</h3>
+								<img class="right" src="@routes.Assets.versioned("images/quotation2.png")" alt=""/>
+								<p>Así tendrás una idea de lo bueno que es tu artículo</p>
+							</div>
+						</li>
+						<li>
+							<div class="sec-slid-info">
+								<img src="@routes.Assets.versioned("images/quotation.png")" alt=""/>
+								<h3>Puedes variar los parámetros para obtener el resultado deseado</h3>
+								<img class="right" src="@routes.Assets.versioned("images/quotation2.png")" alt=""/>
+								<p>Con esto podrás modificar tu artículo para que sea exitoso</p>
+							</div>
+						</li>
+						<li>
+							<div class="sec-slid-info">
+								<img src="@routes.Assets.versioned("images/quotation.png")" alt=""/>
+								<h3>Podrás utilizar diferentes técnicas de prediccion.</h3>
+								<img class="right" src="@routes.Assets.versioned("images/quotation2.png")" alt=""/>
+								<p>Anímate a usar Prediction Madness</p>
+							</div>
+						</li>
+					</ul>
+		</div>
+	</div>
+</div>
+<!-- //slider -->
+<!-- footer -->
+<div class="footer">
+	<div class="container">
+		<div class="footer-grids">
+			<div class="col-md-2 footer-grid logobtm">
+				<a href="index.html">Prediction Madness</a>
+			</div>
+			<div class="col-md-5 footer-grid">
+				<p>Esta página fue desarrollada con el fin de mostrar de una manera diferente los resultados de algunas predicciones.
+                Se quería ir más allá de las herramientas vistas en el curso, y usar otras librerías y lenguajes de programación para predecir</p>
+			</div>
+
+			<div class="clearfix"> </div>
+		</div>
+		<div class="copy-right">
+			<p>Un trabajo desarrollado por <a > Prediction Madness</a> </p>
+		</div>
+	</div>
+</div>
+<!-- //footer -->
+<!-- smooth scrolling -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+		/*
+			var defaults = {
+			containerID: 'toTop', // fading element id
+			containerHoverID: 'toTopHover', // fading element hover id
+			scrollSpeed: 1200,
+			easingType: 'linear'
+			};
+		*/
+		$().UItoTop({ easingType: 'easeOutQuart' });
+		});
+	</script>
+	<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+<!-- //smooth scrolling -->
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET     /                           controllers.Application.index()
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
+POST    /arbol                          controllers.Application.arbol()
+GET     /clasificacion                           controllers.Application.clasifica()
+GET     /regresion                           controllers.Application.regresion()
+GET     /nosotros                           controllers.Application.nosotros()
+GET     /contacto                           controllers.Application.contacto()
+GET     /formu                           controllers.Application.formu()
+GET     /formureg                           controllers.Application.formureg()
+GET     /formutab                           controllers.Application.formutab()
+GET     /formurand                           controllers.Application.formurand()
+GET     /random                           controllers.Application.random()
+GET     /regresionlineal                           controllers.Application.regresionlin()
+GET     /tabla                           controllers.Application.tabla()
